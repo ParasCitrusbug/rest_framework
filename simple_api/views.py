@@ -141,5 +141,7 @@ class SnippetDetails(APIView):
 
 
 class StudentModelBaseView(viewsets.ModelViewSet):
-    pass
+    queryset = Students.objects.all()
+    serializer_class = StudentSerializer
+    
     
